@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TM — Academic Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Playfair Display', serif; background: linear-gradient(to bottom, #fffaf0, #f5e8c7); color:#222; scroll-behavior: smooth; }
+    header { background: linear-gradient(to bottom, #fffaf0, #f5e8c7); text-align:center; padding:80px 20px 60px 20px; position:relative; }
+    .logo { font-size:3rem; font-weight:700; color:#bfa44d; letter-spacing:4px; }
+    .motto { font-size:1.2rem; color:#bfa44d; margin-top:10px; font-style:italic; }
+    .hamburger { position:absolute; top:30px; right:30px; width:30px; height:25px; cursor:pointer; display:flex; flex-direction:column; justify-content:space-between; }
+    .hamburger div { height:4px; background:#bfa44d; border-radius:2px; transition:0.3s; }
+    nav { position:absolute; top:0; right:-250px; width:250px; height:100vh; background:rgba(255,250,240,0.95); box-shadow:-2px 0 8px rgba(0,0,0,0.1); padding:100px 20px; transition:0.4s; }
+    nav ul { list-style:none; }
+    nav ul li { margin:20px 0; font-size:1.1rem; color:#7a674d; cursor:pointer; }
+    main { max-width:800px; margin:auto; padding:40px 20px; }
+    .profile { text-align:center; color:#7a674d; line-height:1.8; font-size:1.2rem; margin-bottom:60px; }
+    #checklist { max-width: 800px; margin: auto; padding: 40px 20px; text-align: left; color: #7a674d; line-height: 1.8; }
+    #checklist h2 { text-align: center; color: #bfa44d; margin-bottom: 30px; }
+    #checklist ul { list-style:none; padding-left:0; }
+    #checklist li { margin:12px 0; }
+    .section-title { font-weight:700; color:#bfa44d; margin-top:20px; }
+    @media(max-width:768px){ .logo{ font-size:2.5rem; } .motto{ font-size:1rem; } .profile{ font-size:1rem; line-height:1.6; } #checklist { font-size:1rem; line-height:1.6; padding:30px 15px; } }
+    a { text-decoration:none; color: inherit; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TM</div>
+    <div class="motto">Every Day Is My Happy Day</div>
+    <div class="hamburger" onclick="toggleNav()"><div></div><div></div><div></div></div>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#checklist">Checklist</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#thoughts">Thoughts</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="profile" id="profile">
+      <p><strong>TM</strong> walks through life as a quiet learner — one who listens more than he speaks,<br>who finds meaning not in answers, but in the gentle rhythm of asking.<br>For him, learning is a slow art of becoming;<br>a way to touch truth without claiming to own it.<br>And so he lives by a simple light:<br><em>“Every Day Is My Happy Day.”</em></p>
+    </div>
+    <section id="checklist">
+      <h2>Website Optimization Checklist</h2>
+      <ul>
+        <li class="section-title">1️⃣ File & Struktur</li>
+        <li>[ ] Pastikan <strong>index.html</strong> berada di root repository</li>
+        <li>[ ] Semua file CSS/JS/Assets sudah terupload dan path benar</li>
+        <li>[ ] Folder assets rapi, sesuai struktur</li>
+        <li class="section-title">2️⃣ Gambar & Media</li>
+        <li>[ ] Gunakan format ringan (WebP/JPEG)</li>
+        <li>[ ] Ukuran gambar tidak terlalu besar (&lt;500 KB)</li>
+        <li>[ ] Resolusi gambar sesuai kontainer / layout</li>
+        <li class="section-title">3️⃣ Font & Tipografi</li>
+        <li>[ ] Hanya load font yang dipakai (Playfair Display 400 & 700)</li>
+        <li>[ ] Ukuran font sesuai untuk desktop & mobile</li>
+        <li>[ ] Periksa line-height & warna teks (#7a674d)</li>
+        <li class="section-title">4️⃣ Responsif / Mobile-Friendly</li>
+        <li>[ ] Meta viewport sudah benar</li>
+        <li>[ ] Cek tampilan di HP, tablet, desktop</li>
+        <li>[ ] Media queries aktif untuk font & padding</li>
+        <li class="section-title">5️⃣ Performance</li>
+        <li>[ ] Minify CSS / HTML jika perlu</li>
+        <li>[ ] Tidak ada script / CSS yang tidak dipakai</li>
+        <li>[ ] Loading halaman &lt; 2 detik</li>
+        <li class="section-title">6️⃣ Navigasi & UX</li>
+        <li>[ ] Hamburger menu berfungsi di semua device</li>
+        <li>[ ] Section kosong siap dikembangkan</li>
+        <li>[ ] Link internal / anchor bekerja lancar</li>
+        <li class="section-title">7️⃣ Testing & Maintenance</li>
+        <li>[ ] Cek website di Google PageSpeed</li>
+        <li>[ ] Pastikan tidak ada error di console browser</li>
+        <li>[ ] Commit terbaru sudah di-push ke GitHub</li>
+        <li>[ ] Backup repository jika ada perubahan besar</li>
+      </ul>
+    </section>
+    <section id="publications"><h2>Publications</h2><p>Content placeholder for TM's publications, articles, or research work.</p></section>
+    <section id="thoughts"><h2>Thoughts</h2><p>Content placeholder for reflections, essays, or philosophical notes.</p></section>
+    <section id="gallery"><h2>Gallery</h2><p>Content placeholder for images, lectures, or visual presentations.</p></section>
+  </main>
+  <script>
+    const nav = document.getElementById('navMenu');
+    let open = false;
+    function toggleNav() {
+      if(!open){ nav.style.right='0'; open=true; } else { nav.style.right='-250px'; open=false; }
+    }
+  </script>
+</body>
+</html>
